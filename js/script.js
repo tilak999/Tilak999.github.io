@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	$(".hello").click(function(){
-		$(".hello").toggleClass("fullWidth");
+		$(".hello").toggleClass("full");
 		$(".welcome").toggleClass("full");
 		console.log("ok");
 	})

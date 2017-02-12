@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 body
 {
     margin:0px;
@@ -19,21 +21,7 @@ body
   background:#fff;
   overflow:hidden;
   z-index: 99;
-}
-
-@keyframes FadeIn { 
-  0% {
-    opacity: 0;
-    transform: scale(.1);
-  }
-
-  85% {
-    opacity: 1;
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
+  background-image: url('../img/background.png');
 }
 
 .welcome
@@ -46,7 +34,6 @@ body
     width: 85%;
     height: 75%;
     margin: auto;
-    background:#fff;
     transition: height .5s cubic-bezier(0.13, 1.15, 1, 1), 
                 width .5s cubic-bezier(0.13, 1.15, 1, 1);
 }
@@ -55,13 +42,75 @@ body
 {
   width:50%;
   height:100%;
+  float: left;
   background:#A34FEE;
   transition: height .5s cubic-bezier(0.13, 1.15, 1, 1), 
               width .5s cubic-bezier(0.13, 1.15, 1, 1);
+}
+
+.profile
+{
+  height: 100%;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.profile h1
+{
+  font-family: 'Times';
+  font-weight: 100;
 }
 
 .full
 {
   width: 100%;
   height: 100%;
+}
+
+.thumb
+{
+  border:#e2e2e2 solid thin;
+  width:150px;
+  height: 150px;
+  padding: 5px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.thumb img
+{
+  width: 150px;
+  border-radius: 50%;
+}
+
+.profile p
+{
+  font-family: 'Nunito', sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.profile h1
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.email
+{
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.marquee
+{
+  font-family: 'Avnir-next', sans-serif;
+}
+
+.marquee-slower,
+.marquee-slow
+{
+  opacity: 0.5;
+  font-family: "Noto Sans Devanagari", "Noto Sans", sans-serif;
+  font-weight:400;
 }

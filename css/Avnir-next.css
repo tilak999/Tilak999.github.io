@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Avnir-next';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Avenir Next regular'), local('avenir-next-regular'), 
+    url(../fonts/avenir-next-regular.woff) format('woff'),
+    url(../fonts/avenir-next-regular.eot) format('eot'),
+    url(../fonts/avenir-next-regular.ttf) format('ttf');
+}
