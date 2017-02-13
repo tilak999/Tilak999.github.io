@@ -1,36 +1,34 @@
 .marquee {
   width: 100%;
-  height: 180px;
   overflow: hidden;
   position: relative;
 }
 
 .marquee div {
   display: block;
-  width: 300%;
+  width: 2000px;
   height: 100%;
   position: absolute;
   overflow: hidden;
-  animation: marquee 7s linear infinite;
+  animation: marquee 10s linear infinite;
 }
 
 .marquee-slow div {
   margin-left:50px; 
-  animation: marquee 9s linear infinite;
+  animation: marquee 18s linear infinite;
 }
 
 .marquee-slower div {
-  animation: marquee 10s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 
-.marquee span {
+.marquee>div>span {
   float: left;
   width: 50%;
-  font-size: 120px;
   color: #fff;
 }
 
 @keyframes marquee {
   0% { left: 0; }
-  100% { left: -150%; }
+  100% { left: -1000px; }
 }
