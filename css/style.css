@@ -32,7 +32,8 @@ body
     left: 0;
     right: 0;
     width: 85%;
-    max-width: 1020px;
+    max-width: 1440px;
+    max-height: 900px;
     height: 75%;
     margin: auto;
     transition: height .5s cubic-bezier(0.13, 1.15, 1, 1), 
@@ -94,6 +95,7 @@ body
   font-family: 'Nunito', sans-serif;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: large;
 }
 
 .profile h1
@@ -113,6 +115,9 @@ body
 .marquee
 {
   font-family: 'Avnir-next', sans-serif;
+  font-size: 120px;
+  height: 180px;
+  margin-top: 25px;
 }
 
 .marquee-slower,
@@ -120,5 +125,12 @@ body
 {
   opacity: 0.5;
   font-family: "Noto Sans Devanagari", "Noto Sans", sans-serif;
-  font-weight:400;
+  font-size: 90px;
+  height: 150px;
+}
+
+.spacer
+{
+  display: inline-block;
+  width: 100px !important;
 }
