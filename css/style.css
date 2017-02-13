@@ -15,7 +15,7 @@ body
 
 .full-page
 {
-  position:absolute;
+  position: absolute;
   width:100%;
   height:100%;
   background:#fff;
@@ -32,6 +32,7 @@ body
     left: 0;
     right: 0;
     width: 85%;
+    max-width: 1020px;
     height: 75%;
     margin: auto;
     transition: height .5s cubic-bezier(0.13, 1.15, 1, 1), 
@@ -44,27 +45,26 @@ body
   height:100%;
   float: left;
   background:#A34FEE;
+  overflow: hidden;
   transition: height .5s cubic-bezier(0.13, 1.15, 1, 1), 
               width .5s cubic-bezier(0.13, 1.15, 1, 1);
-}
-
-.profile
-{
-  height: 100%;
-  text-align: center;
-  padding-top: 5px;
-}
-
-.profile h1
-{
-  font-family: 'Times';
-  font-weight: 100;
 }
 
 .full
 {
   width: 100%;
+  max-width: 100%;
   height: 100%;
+}
+
+.profile
+{
+  text-align: center;
+  width:50%;
+  height:100%;
+  float: left;
+  background:rgba(0,0,0,0);
+  display: table;
 }
 
 .thumb
@@ -83,6 +83,12 @@ body
   border-radius: 50%;
 }
 
+.profile>div
+{
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .profile p
 {
   font-family: 'Nunito', sans-serif;
@@ -92,6 +98,8 @@ body
 
 .profile h1
 {
+  font-family: 'Times';
+  font-weight: 100;
   padding-top: 10px;
   padding-bottom: 10px;
 }
