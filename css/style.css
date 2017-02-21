@@ -10,6 +10,8 @@ body
 {
   position:absolute;
   height:1400px;
+  width: 100%;
+  top: 100%;
   background:#A34FEE;
 }
 
@@ -22,6 +24,12 @@ body
   overflow:hidden;
   z-index: 99;
   background-image: url('../img/background.png');
+}
+
+@media screen and (max-width: 400px) {
+
+
+
 }
 
 .welcome
