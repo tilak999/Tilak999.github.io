@@ -38,11 +38,16 @@ body
   top:0; left:0;
   width:100%;
   background:white;
-  font-family: 'Times';
+  font-family: 'Avnir-next', sans-serif;
   padding: 10px 0px 10px 0px;
-  font-size: 21px;
+  font-size: 24px;
   text-align: center;
   z-index: 99;
+}
+
+.header > span
+{
+  color:#ff3f3f;
 }
 
 @media screen and (min-width: 800px) {
@@ -76,7 +81,7 @@ body
 .profile
 {
   text-align: center;
-  width:50%;
+  padding-left: 10%;
   height:100%;
   float: left;
   display: table;
@@ -94,8 +99,9 @@ body
 
   .profile
   {
+    padding-left: 0px;
     width: 100%;
-    position: absolute; 
+    height: 75%;
     left: 0; top: 100%;
     float: none;
   }
