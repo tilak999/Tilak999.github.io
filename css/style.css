@@ -6,13 +6,12 @@ body
     padding:0px;
 }
 
-.dummy
+.content
 {
   position:absolute;
-  height:1400px;
+  background: #fff;
   width: 100%;
   top: 100%;
-  background:#A34FEE;
 }
 
 /*
@@ -65,8 +64,8 @@ body
   {
     box-shadow: none;
     text-align: left;
-    left: 11%;
-    top: 23px;
+    left: 10.9%;
+    padding: 50px 0px 40px 0px;
   }
 
 }
@@ -98,7 +97,7 @@ body
   .hello
   {
     width:100%;
-    margin-top: 40px
+    margin-top: 50px
   }
 
   .profile
@@ -179,4 +178,13 @@ body
 {
   display: inline-block;
   width: 100px !important;
+}
+
+.about_me
+{
+  background-image: url("../img/background.png");
+  font-family: 'Nunito', sans-serif;
+  padding: 40px;
+  max-width: 900px;
+  margin:auto;
 }
