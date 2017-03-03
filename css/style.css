@@ -9,7 +9,7 @@ body
 .content
 {
   position:absolute;
-  background: #fff;
+  background-image: url("../img/background.jpg");
   width: 100%;
   top: 100%;
 }
@@ -29,6 +29,8 @@ body
 .frame
 {
   display: none;
+  z-index: 9;
+  box-shadow: #b7b7b7 0px 0px 15px 0px;
 }
 
 .header
@@ -89,10 +91,16 @@ body
   display: table;
   position: absolute; 
   left: 55%; 
-  background: #fff
+  z-index: 9;
+  background: #fff;
 }
 
 @media screen and (max-width: 630px) {
+
+  .content
+  {
+    margin-top: 600px;
+  }
 
   .hello
   {
@@ -111,7 +119,6 @@ body
   }
 
 }
-
 
 .thumb
 {
@@ -180,11 +187,39 @@ body
   width: 100px !important;
 }
 
-.about_me
+.content > div
 {
-  background-image: url("../img/background.png");
   font-family: 'Nunito', sans-serif;
-  padding: 40px;
-  max-width: 900px;
+  padding: 10px 40px 10px 40px;
+  max-width: 1000px;
   margin:auto;
+}
+
+.about_me p
+{
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: lighter;
+}
+
+.progress-bar
+{
+  background: #e2e2e2;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.progress-bar .progress
+{
+  height: 6px;
+  background: #A34FEE;
+  width: 50%;
+  transition: width .5s cubic-bezier(0.13, 1.15, 1, 1);
+}
+
+.skills h3
+{
+  font-weight: 100;
+  line-height: 35px;
 }
