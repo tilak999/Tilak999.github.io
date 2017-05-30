@@ -47,7 +47,7 @@ body
   z-index: 99;
 }
 
-.header > span
+.header .dot
 {
   color:#ff3f3f;
 }
@@ -223,4 +223,52 @@ body
 {
   font-weight: 100;
   line-height: 35px;
+}
+
+.title > h3
+{
+  color: #a34fee;
+  margin: 0px;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.title > h2
+{
+  margin: 0px;
+}
+
+div.projects > ul
+{
+  padding-left: 10px;
+}
+
+div.projects > ul > li
+{
+  list-style: none;
+  margin-top:25px;
+  overflow: hidden;
+}
+
+div.projects > ul > li > p
+{
+  font-size: 18px;
+  font-weight: 100;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+div.projects a,
+div.projects a:visited,
+div.projects a:active
+{
+  padding: 0px 20px 0px 0px;
+  color:blue;
+  text-decoration: none;
+}
+
+.project-thumb
+{
+  float: left;
+  padding-right: 20px;
 }
