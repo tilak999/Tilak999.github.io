@@ -30,7 +30,7 @@ body
 {
   display: none;
   z-index: 9;
-  box-shadow: #b7b7b7 0px 0px 15px 0px;
+  box-shadow: #b7b7b7 0px 0px 5px 0px;
 }
 
 .header
@@ -65,9 +65,10 @@ body
   .header
   {
     box-shadow: none;
+    position: absolute;
     text-align: left;
-    left: 10.9%;
     padding: 50px 0px 40px 0px;
+    padding-left: 10.9%;
   }
 
 }
@@ -190,7 +191,7 @@ body
 .content > div
 {
   font-family: 'Nunito', sans-serif;
-  padding: 10px 40px 10px 40px;
+  padding: 20px 40px 10px 40px;
   max-width: 1000px;
   margin:auto;
 }
