@@ -14,9 +14,18 @@ jobs:
       matrix:
         node-version: [14.1]
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Dev
+      uses: actions/checkout@v2
+      with:
+        ref: dev
+
+    - name: Checkout Master (prod build)
+      uses: actions/checkout@v2
+      with:
+        ref: master
+    
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm run build --if-present
+    - run: ls
