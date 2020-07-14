@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Blog | Tilak Sasmal</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar"></div>
+        <div class="mt-3 container">
+            <div class="row no-gutters">
+                <div class="col-1">
+                    <h5>TS<span style="color:red">.</span></h5>
+                </div>
+                <div class="col-11">
+                    <ul class="float-right">
+                        <li class="mx-3">
+                            <a class="btn-red" href="/">Home</a>
+                        </li>
+                        <li class="mx-3">
+                            <a class="btn-red" href="{{socialMedia.Github}}?tab=repositories">Projects</a>
+                        </li>
+                        <li class="mx-3">
+                            <a class="btn-red" href="{{socialMedia.Github}}">Github</a>
+                        </li>
+                        <li class="mx-3">
+                            <a class="btn-red" href="{{socialMedia.Email}}">Say Hi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="main-text my-3">
+                    Hello! I am <b>Tilak Sasmal</b> a designer/developer from India and welcome to my blog. This blog is
+                    mostly a dev journal, here is write about stuff i work on or something which I have learnt or
+                    discovered on the internet. Feel free to reach out or check my GitHub repo for the project I worked
+                    on.
+                    <em>Happy Reading !!</em>
+                </p>
+                <h3 class="mt-5">Posts</h3>
+            </div>
+            {% for post in posts %}
+            <div class="col-12 col-lg-6">
+                    <div class="row mt-2">
+                        <div class="col-12 col-sm-6 col-lg-5 my-2">
+                            <img class="w-100 rounded border"
+                                src="{{post.featureImage}}">
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-7 my-2">
+                            <h5>
+                                <a href="{{post.link}}">{{post.title}}</a>
+                            </h5>
+                            <span class="badge badge-primary">{{post.author}}</span>
+                            <p class="my-2 font-sm">{{post.snapshot}}</p>
+                            <a href="{{post.link}}" class="btn btn-link btn-red px-0">Read</a>
+                        </div>
+                    </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <footer>
+        <div class="badge-primary py-3 mt-2">
+            <center>
+                <div class="my-1">Designed and developed by Tilak Sasmal</div>
+                <div>Hosted on Github with 
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+                </div> 
+            </center>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Personal portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js --dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tilak Sasmal",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/core": "^3.1.0",
+    "fs-extra": "^9.0.1",
+    "liquidjs": "^9.14.0",
+    "yaml": "^1.10.0"
+  }
+}

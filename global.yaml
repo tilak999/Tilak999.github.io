@@ -1,0 +1,80 @@
+---
+greetings:
+- Hello.
+- Namaste.
+- Hola.
+bio: I'm <b>Tilak Sasmal</b>, a full-stack developer based in Pune, India. I'm a developer
+  who also designs. I primarily code in python and node.js but switching languages
+  and frameworks is not an issue. I'm passionate about creating apps and software
+  that makes an impact on people's lives.<br/><br/>Other than, coding and design I'm
+  an avid learner, dreamer and builder. Some of my favourite pass time activities
+  are listening to music, watching shows and learning new things. I am also an open-source
+  collaborator, so if you have something interesting do ping me :)
+socialMedia:
+  LinkedIn: ''
+  Github: https://github.com/Tilak999
+  Email: mailto:tilaksasmal999+hello@gmail.com
+skills:
+- node.js
+- python
+- java
+- Go lang
+- C#
+- flask
+- Spring Boot
+- Algorithms
+- Data Structure
+- Android
+- Electronjs
+- Ionic
+- bootstrap
+- jquery
+- Reactjs
+- Vuejs
+- MongoDB
+- SQL
+- Expressjs
+projects:
+- name: Imgchart.net
+  tags:
+  - Web App
+  - SaaS
+  desc: REST API service for generation images of charts and graphs using user submitted
+    data.
+  url: https://imgchart.net
+  image: img/imgchart.png
+- name: NoNoise
+  tags:
+  - Android
+  - Productivity
+  desc: It is an android app that makes natural surround sound. You can enjoy the
+    sound of Rain, Cafe, Trains, Seawaves, rains and a lot more.
+  url: https://play.google.com/store/apps/details?id=com.ideabox.NoNoise&hl=en
+  image: img/NoNoise.png
+- name: Zen Garden
+  tags:
+  - Android
+  - Productivity
+  - Cordova
+  - Ionic
+  desc: Zen Garden is a productivity app that help you to stay focused on your task.
+    It sets a timer for which you want to stay away from your phone and if you are
+    successful in not touching your phone then you are rewarded with a virtual plant.
+  github: https://github.com/Tilak999/zen-garden
+  image: img/ZenGarden.png
+- name: Blood Bank
+  tags:
+  - Android
+  - Demo
+  desc: This app help users to find doner of particular Blood Group and it could filter
+    results based on location. The doners can register themselves and provide their
+    contact details.
+  github: https://github.com/Tilak999/BloodBank
+  image: img/bloodbank.jpeg
+- name: Microblob.ml
+  tags:
+  - Web app
+  desc: Microblob is a self conatined notepad and publishing tool.
+  github: https://github.com/Tilak999/microblob
+  url: http://microblob.ml
+  image: img/Microblob.png

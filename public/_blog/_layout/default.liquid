@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/github.css" />
+    <title>{{title}} | Tilak Sasmal</title>
+    <script>
+        window.onload = ()=>{
+
+        }
+    </script>
+    <style>
+        img { 
+            width: 100%; 
+            margin: 15px 0px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar"></div>
+    </header>
+    <div class="container markdown-body">
+        <div class="row justify-content-center my-4">
+            <div class="col-12 col-lg-8 mt-3">
+                <div class="mb-3">
+                    <a href="/blog">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M5.854 4.646a.5.5 0 0 1 0 .708L3.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"/>
+                            <path fill-rule="evenodd" d="M2.5 8a.5.5 0 0 1 .5-.5h10.5a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                        Back to Blog
+                    </a>
+                </div>
+                <h1 class="my-2">{{title}}</h1>
+                <small>{{pubDate}} &nbsp; | &nbsp; {{Author}}</small>
+                <!-- This tag will be replaced with actual blog content-->
+                <img src="{{featureImage}}"></img>
+                <content/>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="badge-primary py-3 mt-2">
+            <center>
+                <div class="my-1">Designed and developed by Tilak Sasmal</div>
+                <div>Hosted on Github with 
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+                </div> 
+            </center>
+        </div>
+    </footer>
+</body>
+</html>
+
